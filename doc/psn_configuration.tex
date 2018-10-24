@@ -169,7 +169,7 @@ The above form of \verb|[nm_versions]| must be manually created in psn.conf. It 
 PsN will only run NONMEM via the nmfe script, an alternative script set by the user, or a NMQual autolog.pl script. 
 The default setting is nmfe, where PsN will look for nmfeX, where X stands for the NONMEM version number specified in the nm\_versions section (X is 72 if NONMEM 7.2 is used), in first the /run then the /util and last the /. subdirectory of the installation directory specified in psn.conf, and call the first instance found. Note that it is possible to use nmfeX scripts located in any directory specified in the [nm\_versions] section, not just a standard NONMEM installation directory, and that a wrapper can also be used, see section Essential NONMEM information.
 
-\section{PsN and MNQual 8}
+\section{PsN and NMQual 8}
 
 PsN 4 supports NMQual 8 (but no older versions of NMQual). The user must set option -nmqual, either in psn.conf or on the command line, and the NONMEM installation directory must be properly defined in psn.conf (see section Essential NONMEM information above). PsN will look for autolog.pl in the nmqual subdirectory of the NONMEM installation directory, and return an error if it is not found.
 PsN will use the log.xml file in the nmqual subdirectory of the NONMEM installation directory as input to autolog.pl, so it is important that nmqual/log.xml exists and that the containing NONMEM installation information has not been changed after the original NONMEM installation via NMQual.
